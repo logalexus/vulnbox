@@ -1,0 +1,14 @@
+- name: Check nano is installed
+  apt:
+    name: nano
+    state: present
+
+- name: Add s-bit for nano
+  file:
+    path: /usr/bin/nano
+    mode: u+s
+
+- name: Add flag in root dir
+  copy:
+    src: ./flag.txt
+    dest: /root/

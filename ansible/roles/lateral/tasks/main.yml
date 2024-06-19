@@ -1,0 +1,6 @@
+- name: Create bruteforsable user 'nikita'
+  user:
+    name: nikita
+    password: "{{ 'iloveyou' | password_hash('sha512') }}"
+    shell: /bin/bash
+    create_home: yes

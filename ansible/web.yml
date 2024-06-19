@@ -1,0 +1,8 @@
+- hosts: web
+  become: yes
+  roles:
+    # - apache
+    # - web
+    # - lateral
+    # - lpe
+    - ssh

@@ -1,0 +1,4 @@
+- name: Copy php service
+  copy:
+    src: ./src/
+    dest: /var/www/html/
